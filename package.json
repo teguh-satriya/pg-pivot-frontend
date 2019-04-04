@@ -7,8 +7,14 @@
     "@types/node": "11.13.0",
     "@types/react": "16.8.12",
     "@types/react-dom": "16.8.3",
+    "graphiql": "^0.13.0",
+    "graphiql-explorer": "^0.3.7",
+    "graphql": "^14.2.1",
+    "plotly.js": "^1.46.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-pivottable": "^0.9.0",
+    "react-plotly.js": "^2.3.0",
     "react-scripts": "2.1.8",
     "typescript": "3.4.1"
   },
@@ -16,7 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,5 +35,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "flow-bin": "^0.91.0",
+    "gh-pages": "^2.0.1"
+  }
 }
