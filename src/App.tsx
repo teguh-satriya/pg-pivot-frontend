@@ -14,7 +14,7 @@ import './App.css';
 
 
 function fetcher(params: Object): Promise<any> {
-  return fetch('http://localhost:1000/graphql',{
+  return fetch('http://206.189.81.53:1000/graphql',{
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -78,7 +78,7 @@ export default () => {
               tableData.push(data);
             }
           }
-          console.log(tableData);
+          
           setData(tableData);
         }
       })
